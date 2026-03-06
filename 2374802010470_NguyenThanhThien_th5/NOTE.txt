@@ -1,0 +1,23 @@
+Bài 1
+So sánh các mô hình
+- Mô hình cơ bản: 2-4-1
+- Mô hình tăng nút: 2-8-1
+- Mô hình 2 lớp ẩn: 2-8-6-1
+Khi tăng số nút hoặc số lớp ẩn mô hình có thể học được nhiều đặc trưng hơn của dữ liệu
+Vì vậy loss thường giảm và độ chính xác có thể tăng lên
+
+Bài 2
+So sánh kết quả
+BCEWithLogitsLoss là phiên bản kết hợp giữa Sigmoid và BCELoss
+Hàm này giúp việc tính toán ổn định hơn nên mô hình thường học tốt hơn
+Về optimizer:
+- Adam: hội tụ nhanh hơn và giảm loss nhanh.
+- SGD: giảm loss chậm hơn vì cách cập nhật đơn giản hơn.
+
+Bài 3
+Phân tích đồ thị
+Quan sát đồ thị loss:
+- Mô hình dùng Adam giảm loss nhanh hơn.
+- Mô hình có nhiều nút hơn học nhanh hơn ở giai đoạn đầu.
+- SGD giảm loss chậm hơn nhưng vẫn hội tụ sau nhiều epoch.
+Điều này cho thấy cấu trúc mạng và optimizer có ảnh hưởng đến quá trình học của mô hình.
